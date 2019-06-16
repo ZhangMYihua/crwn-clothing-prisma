@@ -1,0 +1,6 @@
+endpoint: http://138.68.19.53:4466/crwn-clothing-prisma/dev
+datamodel: datamodel.prisma
+
+generate:
+  - generator: javascript-client
+    output: ./generated/prisma-client/

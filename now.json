@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "name": "crwn-clothing",
+  "builds": [{ "src": "index.js", "use": "@now/node-server@canary" }],
+  "routes": [{ "src": "/.*", "dest": "index.js" }]
+}

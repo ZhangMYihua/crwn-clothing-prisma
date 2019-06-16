@@ -1,0 +1,18 @@
+type User {
+  id: ID! @unique
+  name: String!
+}
+
+type Collection {
+  id: ID! @unique
+  title: String! @unique
+  items: [Item!]!
+}
+
+type Item {
+  id: ID! @unique
+  name: String!
+  imageUrl: String!
+  price: Float!
+  collection: Collection
+}
